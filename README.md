@@ -13,35 +13,40 @@ A fast, multi-threaded Python network scanner designed for the average joe. NetR
 You can run NetRipper directly from the source code, or make it executable to run globally from anywhere on your machine.
 
 **Option 1: Run directly**
-bash: ```
-git clone https://github.com/YourUsername/NetRipper.git
+
+```
+git clone https://github.com/mentalEdge984/NetRipper.git
 cd NetRipper
 python3 netripper.py
 ```
 
 **Option 2: Make it globally executable**
-bash: ```
+```
 chmod +x netripper.py
 sudo cp netripper.py /usr/local/bin/netripper
 ```
 
 ## Usage
-NetRipper is driven by flexible command-line flags. 
+NetRipper is driven by flexible command-line flags.
 
-**Basic Scan (Top 1000 ports):**
-bash: ```
-netripper [target-ip]
+**Basic Default Scan (Top 1000 ports):**
+
+```
+netripper -t [target IP]
 ```
 
-**Full Port Scan:**
-bash: ```
-netripper -t [target ip] -p all
+**Full Port Scan**
+
+```
+netripper -t [target IP] -p all
 ```
 
-**Subnet Scan:**
-bash: ```
+**Subnet Scan**
+
+```
 netripper -s [subnet]
 ```
+
 ## Running on Windows
 NetRipper is fully cross-platform, but Windows requires a quick setup first since it doesn't come with Python pre-installed.
 
@@ -52,8 +57,8 @@ NetRipper is fully cross-platform, but Windows requires a quick setup first sinc
 **2. Usage**
 Open Command Prompt or PowerShell, navigate to the folder where you downloaded NetRipper, and run the script by calling `python` first:
 
-cmd or PS:```
-python netripper.py [target-ip]
+```
+python netripper.py [target IP]
 ```
 
 **3. Troubleshooting**
